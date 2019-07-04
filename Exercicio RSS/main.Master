@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="Exercicio_RSS.main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Texo Titulo</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <header style="width:100%;padding:10px;min-height:100%;">
+            <asp:Label Text="Texto" runat="server" ID="lbl1"></asp:Label>
+        </header>
+
+        <asp:DropDownList runat="server" ID="dropdownListaRSS" AutoPostBack="True" OnSelectedIndexChanged="dropdownListaRSS_SelectedIndexChanged"></asp:DropDownList>
+
+        <div>
+            <asp:ContentPlaceHolder ID="body" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+
+    </form>
+</body>
+</html>

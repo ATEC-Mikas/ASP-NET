@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="FrontOffice.master.cs" Inherits="Ex3.libs.FrontOffice" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>
+    </title>
+    <style>
+        main {
+            display:flex;
+            flex-direction:column;
+            margin:10px auto;
+            width:100%;
+            max-width:800px;
+        }
+        div.content {
+
+        }
+        h1.title {
+            padding:10px;
+            border-bottom:solid 1px black;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <main>
+            <h1 class="title">Frontoffice</h1>
+
+            <div class="content">
+                <asp:ContentPlaceHolder ID="Content" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </main>
+    </form>
+</body>
+</html>

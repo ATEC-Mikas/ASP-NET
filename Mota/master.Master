@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="Mota.master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="margin:0">
+    <form id="form1" runat="server">
+        <div>
+            <header style="width:100%;padding:10px;margin-bottom:10px;min-height:100px;background-color:crimson;">
+                <h1>Teste Header</h1>
+            </header>
+
+            <asp:ContentPlaceHolder ID="bodyUpper" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <div style="padding:10px;">
+            <asp:ContentPlaceHolder ID="bodyMiddle" runat="server">
+            </asp:ContentPlaceHolder>
+            </div>
+
+
+
+            <asp:ContentPlaceHolder ID="bodyLower" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <footer style="width:100%;padding:10px;margin-top:20px;min-height:100px;text-align:center;background-color:crimson;">
+                <h2>Teste Footer</h2>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
